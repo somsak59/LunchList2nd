@@ -5,4 +5,5 @@
     <dimen name="five">5dp</dimen>
     <dimen name="ten">10dp</dimen>
     <dimen name="two_hundred_sp">200sp</dimen>
+    <dimen name="twenty">20sp</dimen>
 </resources>
