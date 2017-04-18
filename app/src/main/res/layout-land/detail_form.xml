@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:paddingTop="@dimen/ten"
-    android:paddingRight="@dimen/ten"
-    android:paddingLeft="@dimen/ten"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:stretchColumns="1">
+    android:paddingLeft="@dimen/ten"
+    android:paddingRight="@dimen/ten"
+    android:stretchColumns="1,3">
     <TableRow>
         <TextView android:text="@string/name"/>
-        <EditText android:id="@+id/name"/>
+        <EditText android:id="@+id/name"
+            android:layout_span="@integer/three"/>
     </TableRow>
     <TableRow>
         <TextView android:text="@string/address"/>
-        <EditText android:id="@+id/addr"/>
+        <EditText android:id="@+id/addr"
+            android:layout_span="@integer/three"/>
     </TableRow>
     <TableRow>
         <TextView android:text="@string/website"/>
-        <EditText android:id="@+id/web"/>
+        <EditText android:id="@+id/web"
+            android:layout_span="@integer/three"/>
     </TableRow>
     <TableRow>
         <TextView android:text="@string/type"/>
@@ -38,19 +40,26 @@
                 android:text="@string/delivery"/>
 
         </RadioGroup>
-    </TableRow>
-    <TableRow>
         <TextView android:text="@string/notes"/>
-        <EditText android:id="@+id/notes"
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes"
             android:gravity="top"
             android:lines="@integer/two"
             android:scrollHorizontally="false"
-            android:maxLines="@integer/two"
-            android:maxWidth="@dimen/two_hundred_sp"/>
+            android:maxLines="@integer/four"
+            android:maxWidth="@dimen/hundred_forty"/>
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"/>
+        </LinearLayout>
     </TableRow>
-    <Button android:id="@+id/save"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/save"/>
 
 </TableLayout>

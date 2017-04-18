@@ -6,4 +6,6 @@
     <dimen name="ten">10dp</dimen>
     <dimen name="two_hundred_sp">200sp</dimen>
     <dimen name="twenty">20sp</dimen>
+    <dimen name="three">3dp</dimen>
+    <dimen name="hundred_forty">140sp</dimen>
 </resources>
