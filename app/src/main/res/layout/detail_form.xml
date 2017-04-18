@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/ten"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1">
+    <TableRow>
+        <TextView android:text="@string/name"/>
+        <EditText android:id="@+id/name"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="@string/address"/>
+        <EditText android:id="@+id/addr"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="@string/website"/>
+        <EditText android:id="@+id/web"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="@string/type"/>
+        <RadioGroup android:id="@+id/types">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/take_out"
+                android:text="@string/takeout"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sit_down"
+                android:text="@string/sit_down"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/delivery"
+                android:text="@string/delivery"/>
+
+        </RadioGroup>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="@string/notes"/>
+        <EditText android:id="@+id/notes"
+            android:gravity="top"
+            android:lines="@integer/two"
+            android:scrollHorizontally="false"
+            android:maxLines="@integer/two"
+            android:maxWidth="@dimen/two_hundred_sp"/>
+    </TableRow>
+    <Button android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"/>
+
+</TableLayout>
